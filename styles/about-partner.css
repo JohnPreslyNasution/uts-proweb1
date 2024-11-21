@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+}
+.hero-section {
+    background-color: #007bff;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+.benefits-section {
+    padding: 40px 20px;
+}
+.benefit-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.testimonial-section {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+}

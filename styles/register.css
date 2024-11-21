@@ -1,0 +1,24 @@
+body {
+    background-color: #f8f9fa;
+}
+.register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    padding: 30px; 
+    width: 100%;
+    max-width: 400px; 
+}
+.register-title {
+    color: black; 
+}
+.btn-register {
+    background-color: #343a40; 
+    color: white; 
+}
