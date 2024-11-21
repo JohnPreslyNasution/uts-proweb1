@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Main Menu - EPOF</title>
+    <style>
+        body {
+            background-color: #f0f4f8; /* Light background for a clean look */
+        }
+        .navbar {
+            background-color: #343a40; /* Dark grey for the navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important; /* White text for navbar */
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #007bff; /* Blue background for welcome section */
+            color: white;
+        }
+        .card {
+            border: none; /* Remove border for cards */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .card-title {
+            color: #343a40; /* Dark grey for card titles */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40; /* Dark grey for footer */
+            color: white;
+        }
+        .news-section {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">EPOF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="welcome-section">
+        <h1>Welcome to EPOF!</h1>
+        <p>Your gateway to a world of knowledge and learning.</p>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Courses</h5>
+                        <p class="card-text">Explore a variety of online courses to enhance your skills and knowledge.</p>
+                        <a href="#" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Resources Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Educational Resources</h5>
+                        <p class="card-text">Access a wealth of resources including articles, videos, and more.</p>
+                        <a href="#" class="btn btn-primary">Explore Resources</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md -4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Community Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Forum</h5>
+                        <p class="card-text">Join discussions with fellow learners and educators to share knowledge.</p>
+                        <a href="#" class="btn btn-primary">Join Forum</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-section container mt-5">
+        <h2 class="text-center">Latest News</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="News Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">New Course Launch</h5>
+                        <p class="card-text">We are excited to announce the launch of our new course on Data Science!</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="News Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Scholarship Opportunities</h5>
+                        <p class="card-text">Apply now for our scholarship program to support your educational journey.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="News Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Webinar Series</h5>
+                        <p class="card-text">Join our upcoming webinar series on innovative teaching methods.</p>
+                        <a href="#" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2023 EPOF. All rights reserved.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb3g5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1" crossorigin="anonymous"></script>
+</body>
+</html>

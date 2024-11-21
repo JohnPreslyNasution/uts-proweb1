@@ -10,16 +10,31 @@
         body {
             background-color: #f8f9fa; /* Light grey background */
         }
+        
         .hero {
-            height: 100vh; /* Full height */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #007bff; /* Bootstrap primary blue */
-            color: white;
-            text-align: center;
-        }
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/bg.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    color: white;
+    text-align: center;
+    position: relative; /* Position relative for overlay */
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    padding: 20px; /* Padding around the content */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.text-black {
+    color: black; /* Black text color */
+}
         .footer {
             background-color: #343a40; /* Dark grey */
             color: white;
@@ -48,30 +63,51 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="hero" id="home">
-        <img src="assets/logo-epof.png" alt="Logo EPOF" class="mb-4" style="width: 200px;">
-        <h1>Education For Free</h1>
-        <p>Belajar Tanpa Batas dengan EPOF!</p>
-        <p>Nikmati akses gratis ke ribuan video edukatif yang unik</p>
-        
-        <h2>Siapa yang terdampak?</h2>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Telah dipercaya oleh banyak creator</li>
-            <li class="list-group-item">Telah dipercaya oleh banyak pelajar</li>
-            <li class="list-group-item">Diminati oleh banyak perusahaan</li>
-        </ul>
+        <div class="overlay container-md mt-">
+            <img src="assets/logo-epof.png" alt="Logo EPOF" class="mb-4" style="width: 200px;">
+            <h1 class="text-black">Education For Free</h1>
+            <p class="text-black">Belajar Tanpa Batas dengan EPOF!</p>
+            <p class="text-black">Nikmati akses gratis ke ribuan video edukatif yang unik</p>
+            
+            <h2 class="text-black">Siapa yang terdampak?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Creator</h5>
+                            <p class="card-text">Telah dipercaya oleh banyak creator.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Pelajar</h5>
+                            <p class="card-text">Telah dipercaya oleh banyak pelajar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Perusahaan</h5>
+                            <p class="card-text">Diminati oleh banyak perusahaan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container mt-5 mb-5">
+    <div class="cardian container mt-5 mb-5">
         <h2 class="text-center mb-4">Join Us</h2>
         <div class="row g-4">
             <div class="col-md-4">
@@ -88,13 +124,13 @@
                     <img src="assets/ilt-user.png" class="card-img-top" alt="User ">
                     <div class="card-body">
                         <p class="card-text">Bergabunglah sebagai pengguna dan nikmati akses ke berbagai materi edukatif. Kembangkan keterampilan Anda dan raih impian Anda bersama EPOF.</p>
-                        <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                        <a href="about-user.html" class="btn btn-primary">Lihat Selengkapnya</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="assets/ilt-company.png" class="card-img-top" alt="Company">
+                    <img src="assets/ilt-partner.png" class="card-img-top" alt="Company">
                     <div class="card-body">
                         <p class="card-text">Bergabunglah dengan kami sebagai mitra perusahaan. Temukan talenta terbaik dan dukung pendidikan yang berkualitas.</p>
                         <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
@@ -111,7 +147,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb3g5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb3g5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1n1" crossorigin="anonymous"></script>
 </body>
 </html>
